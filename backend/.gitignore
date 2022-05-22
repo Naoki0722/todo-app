@@ -1,0 +1,5 @@
+env
+*.log
+*.pyc
+db.sqlite3
+.DS_Store
