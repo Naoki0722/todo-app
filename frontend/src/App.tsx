@@ -3,12 +3,13 @@ import { VFC } from 'react'
 import { Link } from 'react-router-dom'
 import { css } from "@emotion/react";
 
-const style = css`
-  background-color: blue;
-  &:hover {
-    background-color: red;
+const style = css({
+  backgroundColor: 'blue',
+  '&:hover': {
+    backgroundColor: 'red'
   }
-`;
+})
+
 
 const App: VFC = () => (
   <div className="App">
