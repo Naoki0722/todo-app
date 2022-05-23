@@ -1,12 +1,6 @@
-# React+TypeScript templete
+# Todo-Frontend
 
 ## How to use
-
-### clone
-
-```
-git clone git@github.com:Naoki0722/templete-react-project.git
-```
 
 ### package install
 
@@ -68,4 +62,3 @@ npm:7.11.2
 eslint:8.2.0
 
 prettier:2.5.1
-
