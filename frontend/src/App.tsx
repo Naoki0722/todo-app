@@ -1,18 +1,35 @@
+import { Button, Stack } from '@mui/material'
 import { VFC } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { Link } from 'react-router-dom'
+import { css } from "@emotion/react";
+
+const style = css`
+  background-color: blue;
+  &:hover {
+    background-color: red;
+  }
+`;
 
 const App: VFC = () => (
   <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-      <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
-    </header>
+    Home画面
+    <nav>
+      <ul>
+        <li>
+          <Link to="list">タスク一覧ページへ</Link>
+        </li>
+        <li>
+          <Link to="register">タスク登録ページへ</Link>
+        </li>
+      </ul>
+    </nav>
+    <h2>サンプルスタイル</h2>
+    <Stack spacing={2} direction="row">
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+      <Button variant="contained" css={style}>ボタン</Button>
+    </Stack>
   </div>
 )
 
